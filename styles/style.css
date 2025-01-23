@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* Nav styles */
+.nav1{
+    display: flex;
+}
+.nav2 li{
+    list-style: none;
+}
+.nav2 a{
+    text-decoration: none;
+}
+.list{
+    display: flex;
+    gap: 32px;
+}
+.li-1{
+    color: rgba(254, 163, 1, 1);
+}
+.li-2{
+    color: rgba(1, 172, 253, 1);
+}
+.li-3{
+    color: rgba(5, 212, 223, 1);
+}
+.li-4{
+    color: rgba(93, 88, 239, 1);
+}
+.btn-primary{
+    background-color: rgba(254, 163, 1, 1);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 60.5px;
+    border: none;
+}
+.navbar{
+    display: flex;
+    gap: 186px;
+    max-width: 1160px;
+    margin: 20px 140px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Shared style */
+.margin-top{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 576px){
+    .nav-title, .nav2, .btn-primary{
+        display: none;
+    }
+    .navbar{
+        background-image: url(../assets/bars-solid.svg);
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-bottom: 1px solid #FEA301;
+    }
+    
+    
+}
