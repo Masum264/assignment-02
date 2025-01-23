@@ -94,11 +94,18 @@
 /* curriculum styles */
 .curriculum{
     background-image: url('../assets/bg.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100vw; 
+   
+
+}
+.curriculum-container{
     margin-left: auto;
     margin-right: auto;
     max-width: 1158px;
     width: 100%;
-
 }
 .curri-title{
     font-weight: bold;
@@ -181,6 +188,68 @@
 }
 .arrow-btns:hover{
     background-color: blue;
+}
+/* stories styles */
+.stories {
+    background-image: url('../assets/bg.png'), linear-gradient(to top,#FEA301 0%, #FFFFFF 100%);
+    background-size: cover; 
+    /* background-position: center;  */
+    background-repeat: no-repeat; 
+    /* width: 100vw;  */
+    margin-left: 0; 
+    margin-right: 0;
+    margin-top: 100px;
+    padding: 60px 0; 
+}
+.stories-content{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1158px;
+    width: 100%;
+
+}
+
+.stories-title{
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-top: 60px;
+    margin-left: 489.7px;
+    margin-right: 489.7px;
+    margin-bottom: 80px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+}
+.box{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    
+}
+#box1{
+    grid-row: span 2;
+}
+.box-title1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 38px;
+    margin-right: 98px;
+}
+.box-title{
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-left: 38px;
+    margin-right: 58px;
+}
+.box-text{
+    color: rgba(102, 102, 102, 1);
+    font-size: 0.9rem;
+    margin-left: 38px;
+    margin-right: 38px;
+}
+.box img{
+    border-radius: 16px 16px 0 0;
 }
 
 @media screen and (max-width: 576px){
