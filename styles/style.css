@@ -55,7 +55,7 @@
 .banner{
     margin-left: 140px;
     margin-right: 140px;
-    max-width: 1158px;
+    max-width: 100%;
     display: flex;
     gap: 50px;
 
@@ -97,7 +97,7 @@
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    width: 100vw; 
+    max-width: 1440px; 
    
 
 }
@@ -111,9 +111,8 @@
     font-weight: bold;
     font-size: 2.8rem;
     margin-top: 60px;
-    margin-left: 489.7px;
-    margin-right: 489.7px;
     margin-bottom: 80px;
+    text-align: center;
 }
 .curri-cards{
     display: flex;
@@ -123,13 +122,13 @@
     
 }
 .card1{
-    background-color: rgba(222, 245, 255, 1);
+    background: linear-gradient(#DEF5FF 0%, #FFFFFF 40%);
     border-radius: 19px;
     width: 100%;
     
 }
 .card2{
-    background-color: rgba(255, 244, 220, 1);
+    background: linear-gradient(#FFF4DC 0%, #FFFFFF 40%);
     border-radius: 19px;
     width: 100%;
 }
@@ -137,7 +136,7 @@
 
 .card3{
     border-radius: 19px;
-    background-color: rgba(242, 232, 255, 1);
+    background: linear-gradient(#EEE1FF 0%, #FFFFFF 40%);
     width: 100%;
     
 }
@@ -180,10 +179,12 @@
     max-width: 60px;
     max-height: 60px;
    
+   
 }
 .arrow-btns{
     margin-top: 80px;
-    margin-left: 550px;
+    display: flex;
+    justify-content: center;
     
 }
 .arrow-btns:hover{
@@ -191,21 +192,19 @@
 }
 /* stories styles */
 .stories {
-    background-image: url('../assets/bg.png'), linear-gradient(to top,#FEA301 0%, #FFFFFF 100%);
+    background-image: url('../assets/bg.png'), linear-gradient(360deg, #FEA301 0%, #FFFFFF 100%);
     background-size: cover; 
-    /* background-position: center;  */
     background-repeat: no-repeat; 
-    /* width: 100vw;  */
-    margin-left: 0; 
-    margin-right: 0;
+    max-width: 100%;
     margin-top: 100px;
-    padding: 60px 0; 
+    overflow-x: hidden;
+    
 }
 .stories-content{
-    margin-left: auto;
-    margin-right: auto;
+
     max-width: 1158px;
     width: 100%;
+    margin: 0 auto;
 
 }
 
@@ -213,8 +212,7 @@
     font-weight: bold;
     font-size: 2.8rem;
     margin-top: 60px;
-    margin-left: 489.7px;
-    margin-right: 489.7px;
+    text-align: center;
     margin-bottom: 80px;
 }
 .container{
@@ -225,6 +223,7 @@
 .box{
     background-color: rgba(255, 255, 255, 1);
     border-radius: 16px;
+    max-width: 100%;
     
 }
 #box1{
@@ -251,6 +250,10 @@
 .box img{
     border-radius: 16px 16px 0 0;
 }
+.view-btn{
+    margin-top: 90px;
+    text-align: center;
+}
 
 @media screen and (max-width: 576px){
     .nav-title, .nav2, .btn-primary{
@@ -259,13 +262,23 @@
     .navbar{
         background-image: url(../assets/bars-solid.svg);
         background-repeat: no-repeat;
-        background-position: top left;
+        justify-content: space-between;
         border-bottom: 1px solid #FEA301;
+    }
+    .nav-logo img{
+        padding: 0;
+        margin: 0;
     }
     .banner{
         flex-direction: column-reverse;
-        max-width: 357px;
+        margin-left: 0;
+        margin-right: 0;
+        
     }
+    .banner-container{
+        margin-top: 0;
+    }
+
     .banner-title{
         text-align: center;
         font-size: 2rem;
@@ -282,10 +295,37 @@
         align-items: center;
         margin-left: 30px;
     }
+    .banner-btn-primary{
+        margin-left: 0;
+        text-align: center; 
+    }
+    .arrow-btns{
+        display: none;
+    }
     .curri-cards{
         flex-direction: column;
         max-width: 100%;
     }
+    #box1 {
+        display: none;
+    }
+    .stories{
+        max-width: 100%;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+    .box img{
+        max-width: 100%;
+    }
+
+
+    .view-btn {
+        margin-left: 0;
+        text-align: center; 
+    } 
     
     
     
